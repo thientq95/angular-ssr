@@ -1,0 +1,41 @@
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Panel heading</div>
+    <div class="panel-body">
+        <p>CRUD Movie</p>
+        <div class="pull-right">
+            <button type="button" class="btn btn-success" (click)="openModalCreate(template)">Create new movie</button>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of listMovie">
+                <tr>
+                    <td>{{ item.code }}</td>
+                    <td>{{ item.name }}</td>
+                    <td class="text-right">
+                        <button type="button" class="btn  btn-sm btn-primary" (click)="openModalEdit(template, item)">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </button>
+                        <button type="button" class="btn  btn-sm btn-danger" (click)="remove(item)">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #template>
+    <app-movie-form [data]="data" [action]="action" (closeModal)="hideModal($event)"></app-movie-form>
+</ng-template>

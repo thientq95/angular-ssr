@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">Movie</h4>
+    <button type="button" class="close pull-right" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="">Code</label>
+            <input type="text" formControlName="code" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="" placeholder="">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

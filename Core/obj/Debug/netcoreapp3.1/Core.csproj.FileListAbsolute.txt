@@ -1,0 +1,12 @@
+C:\Users\ad\source\repos\AngularSSR\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\ad\source\repos\AngularSSR\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\ad\source\repos\AngularSSR\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\ad\source\repos\AngularSSR\Core\bin\Debug\netcoreapp3.1\SharedKernel.dll
+C:\Users\ad\source\repos\AngularSSR\Core\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.csproj.CopyComplete
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\ad\source\repos\AngularSSR\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache

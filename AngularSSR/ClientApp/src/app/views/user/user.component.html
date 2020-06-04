@@ -1,0 +1,66 @@
+
+<form action="" method="POST" role="form" [formGroup]="form" (ngSubmit)="onSubmit()" class="">
+    <legend>Form User</legend>
+    <div class="form-group">
+        <label for="">Username</label>
+        <input type="text" class="form-control" formControlName="userName" placeholder="Input field">
+    </div>
+    <div class="form-group">
+        <label for="">FullName</label>
+        <input type="text" class="form-control" formControlName="fullName" placeholder="Input field">
+    </div>
+    <div class="form-group">
+        <label for="">Email</label>
+        <input type="text" class="form-control" formControlName="email" placeholder="Input field">
+    </div>
+    <div class="form-group">
+        <label for="">Gender</label>
+        
+        <div class="radio">
+            <label>
+                <input type="radio" formControlName="gender" id="input" value="1" checked="checked">
+                Male
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" formControlerName="gender" id="input" value="0">
+                Female
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="clearfix"></div>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Panel heading</div>
+    <div class="panel-body">
+        <p>CRUD User</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>UserName</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of listUser">
+                <tr>
+                    <td>{{ item.userName }}</td>
+                    <td>{{ item.fullName }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.gender ? 'Male': 'Female' }}</td>
+                    <td></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
